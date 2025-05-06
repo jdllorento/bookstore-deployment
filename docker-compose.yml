@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  flaskapp:
+    image: jdllorento/bookstore-app:latest
+    restart: always
+    environment:
+      - FLASK_ENV=development
+      - SQLALCHEMY_DATABASE_URI=mysql+pymysql://admin:indesifrable321@bookstore-db.c7wsgi428q2i.us-east-1.rds.amazonaws.com/bookstore
+    ports:
+      - "5000:5000"
+    networks:
+      - bookstore_net
+
+volumes:
+  db_data:
+
+networks:
+  bookstore_net:
