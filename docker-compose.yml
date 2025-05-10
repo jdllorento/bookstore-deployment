@@ -6,11 +6,13 @@ services:
     restart: always
     environment:
       - FLASK_ENV=development
-      - SQLALCHEMY_DATABASE_URI=mysql+pymysql://admin:indesifrable321@bookstore-db.c7wsgi428q2i.us-east-1.rds.amazonaws.com/bookstore
+      - DATABASE_URL=mysql+pymysql://admin:indesifrable321*@bookstore-db.c7wsgi428q2i.us-east-1.rds.amazonaws.com/bookstore
     ports:
       - "5000:5000"
     networks:
       - bookstore_net
+    volumes:
+      - /mnt/bookstore:/app/shared
 
 volumes:
   db_data:
