@@ -36,6 +36,14 @@ Para el objetivo 2:
 - Automatización del arranque con script `start.sh` incluido en una AMI personalizada.
 - Acceso completo por dominio personalizado usando `https://kreadesig.com` y `https://www.kreadesig.com`.
 
+Para el objetivo 3:
+
+- Se creo una instancia EC2 en la cual se incio un docker swarm
+- la docker image actual se subio a dockerhub
+- se inciaron 5 contenedores en el swarm con la imagen del proyecto
+- se creo otro grupo de destino para que el load balancer apunte al docker swarm tambien
+- Es posible aumentar las instancias y el numero de contenedores facilmente
+
 ## 2. Información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas
 
 - Arquitectura monolítica desacoplada mediante contenedores Docker.
