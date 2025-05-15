@@ -39,9 +39,9 @@ Para el objetivo 2:
 Para el objetivo 3:
 
 - Se creo una instancia EC2 en la cual se incio un docker swarm
-- la docker image actual se subio a dockerhub
-- se inciaron 5 contenedores en el swarm con la imagen del proyecto
-- se creo otro grupo de destino para que el load balancer apunte al docker swarm tambien
+- La docker image actual se subio a dockerhub
+- Se inciaron 5 contenedores en el swarm con la imagen del proyecto
+- Se creo otro grupo de destino para que el load balancer apunte al docker swarm tambien
 - Es posible aumentar las instancias y el numero de contenedores facilmente
 
 ## 2. Información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas
@@ -104,6 +104,8 @@ Para el escenario 2, solo hay que acceder a el nombre de dominio (kreadesig.com 
 - En cuanto a puertos no es recomendable cambiar nada en grupos de seguridad, ya que se usan puertos bien conocidos y estandarizados para los servicios usados
 
 ### Capturas del funcionamiento
+![image](https://github.com/user-attachments/assets/29e903d8-8a77-4d3a-8d16-08785ca775e8)
+
 
 ## 4. Ambiente de ejecución (producción)
 
