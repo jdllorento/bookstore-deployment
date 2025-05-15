@@ -169,3 +169,7 @@ NFS montado en las instancias y archivos que han sido compartidos
 
 - Este repo: https://github.com/jdllorento/bookstore-deployment/tree/main
 - Imagen de Docker: https://hub.docker.com/repository/docker/jdllorento/bookstore-app/general
+
+# Sustentación
+
+- https://youtu.be/ohKcdG3WvpQ
