@@ -28,7 +28,7 @@ Para el objetivo 2:
 
 - Despliegue en máquinas virtuales EC2 a través de un Auto Scaling Group (ASG).
 - Balanceo de carga con Application Load Balancer (ALB).
-- Redirección HTTP a HTTPS mediante certificado SSL de ACM.
+- Redirección HTTP a HTTPS mediante certificado SSL de ACM (Amazon Certificate Manager).
 - Uso de imagen Docker personalizada y ejecutada vía `docker-compose`.
 - Base de datos administrada con Amazon RDS (MySQL), configurada como Multi-AZ.
 - Almacenamiento compartido entre instancias usando Amazon EFS.
@@ -105,6 +105,18 @@ Para el escenario 2, solo hay que acceder a el nombre de dominio (kreadesig.com 
 
 ### Capturas del funcionamiento
 ![image](https://github.com/user-attachments/assets/29e903d8-8a77-4d3a-8d16-08785ca775e8)
+
+Acceso HTTPS a la aplicación desplegada
+![image](https://github.com/user-attachments/assets/8d65e96b-d472-4618-9c0f-3f76e36474eb)
+
+Despliegue con Docker
+![image](https://github.com/user-attachments/assets/9047f518-926c-4809-9433-5621775c292a)
+
+Acceso HTTPS a la aplicación monolítica desplegada
+![image](https://github.com/user-attachments/assets/9581ce83-efee-4236-b887-99d65f374b14)
+![image](https://github.com/user-attachments/assets/200d28d0-dd78-43b4-aece-d483dfdeca51)
+
+NFS montado en las instancias y archivos que han sido compartidos
 
 
 ## 4. Ambiente de ejecución (producción)
